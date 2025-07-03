@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - CANAX DESIGNS</title>
+    <!-- Favicon - Replace with your actual favicon -->
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- AOS Library for Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Main Header (Global) -->
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html">CANAX DESIGNS</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="clients.html">Clients</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Portfolio Hero Section -->
+        <section class="hero-section hero-small" style="background-image: url('assets/images/portfolio-hero-bg.jpg');">
+            <div class="video-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-headline">Our Creative Portfolio</h1>
+                <p class="hero-subtext">Explore a selection of our best work across various creative disciplines.</p>
+                <div class="hero-buttons">
+                    <a href="#about-canax" class="btn btn-primary pulse-animation">Learn About Us First</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About CANAX DESIGNS Section (Integrated into Portfolio Page) -->
+        <section id="about-canax" class="about-canax-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">About CANAX DESIGNS</h2>
+                <div class="about-content">
+                    <p data-aos="fade-up" data-aos-delay="100">
+                        CANAX DESIGNS is a global graphic design company that prides itself on professionalism and innovation.
+                        We are dedicated to delivering creative excellence that truly makes an impact for our clients worldwide.
+                    </p>
+
+                    <div class="mission-vision-grid">
+                        <div class="mission-col" data-aos="fade-right" data-aos-delay="200">
+                            <h3>Our Mission & Slogan</h3>
+                            <ul>
+                                <li><i class="fas fa-chart-line"></i> <strong>Boosting your economy</strong> – *Our core business focus, emphasizing how our services contribute to client growth.*</li>
+                                <li><i class="fas fa-star"></i> <strong>Beauty all around</strong> – *A general slogan, highlighting the aesthetic quality and pervasive nature of our work.*</li>
+                                <li><i class="fas fa-microchip"></i> <strong>Be simple and be the best</strong> – *Our approach, reflecting a focus on user experience and efficient design processes, especially relevant to technology projects.*</li>
+                            </ul>
+                        </div>
+                        <div class="vision-col" data-aos="fade-left" data-aos-delay="300">
+                            <h3>Our Vision</h3>
+                            <p>
+                                <i class="fas fa-globe"></i> Our vision is to transform the world into a place to admire,
+                                restoring peace and love among the people through the power of visual and auditory communication.
+                            </p>
+                            <p class="ceo-info"><strong>CEO:</strong> William Oginga Mochengo</p>
+                        </div>
+                    </div>
+
+                    <div class="current-project" data-aos="fade-up" data-aos-delay="400">
+                        <h3><i class="fas fa-laptop-code"></i> Project Spotlight: Caphy</h3>
+                        <p>
+                            We are actively working on 'Caphy,' an innovative project aimed at elevating the phone camera experience.
+                            Caphy seeks to empower smartphone cameras to capture professional-quality pictures, comparable to standard cameras.
+                            We are developing a third-party camera app/system that can be finely regulated for optimal picture performance.
+                            Furthermore, Caphy will incorporate advanced AI capabilities to assist with perfect picture editing,
+                            mimicking the precision and artistry of a professional photo editor.
+                        </p>
+                        <a href="caphy.html" class="btn btn-outline btn-sm">Learn More About Caphy <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Categories and Display Section -->
+        <section id="portfolio-main" class="portfolio-page-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Explore Our Work</h2>
+                <p class="section-subtext" data-aos="fade-up" data-aos-delay="100">Select a category to see our diverse range of projects.</p>
+
+                <!-- Portfolio Category Buttons (Three-Column Split) -->
+                <div class="category-tabs" data-aos="fade-up" data-aos-delay="200">
+                    <button class="category-tab active" data-category="graphics">
+                        <i class="fas fa-palette"></i> Image Graphics
+                    </button>
+                    <button class="category-tab" data-category="videography">
+                        <i class="fas fa-video"></i> Videography
+                    </button>
+                    <button class="category-tab" data-category="audiography">
+                        <i class="fas fa-headphones-alt"></i> Audiography
+                    </button>
+                </div>
+
+                <!-- Portfolio Content Displays -->
+                <div id="portfolio-content-graphics" class="portfolio-content active" data-aos="fade-up">
+                    <h3>Image Graphics Projects</h3>
+                    <p>From captivating logos to compelling marketing materials, see how we bring brands to life visually.</p>
+                    <div class="portfolio-grid">
+                        <!-- Example Graphic Design Projects (Add more as needed) -->
+                        <div class="portfolio-item">
+                            <img src="../../BIZ STUDIO/logo design.jpg" alt="Logo Design Example">
+                            <div class="overlay">
+                                <h4>Brand Logo Design</h4>
+                                <p>Modern & Minimalist</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="../../caphy/trip poster/Trip poster.jpg" alt="Flyer Design Example">
+                            <div class="overlay">
+                                <h4>Event Flyer</h4>
+                                <p>Vibrant & Informative</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="../../caphy/KIPEMBE/done posters/Lake Naivasha package copy.jpg" alt="Company Brochure">
+                            <div class="overlay">
+                                <h4>Company Brochure</h4>
+                                <p>Sleek & Professional</p>
+                            </div>
+                        </div>
+                         <div class="portfolio-item">
+                            <img src="assets/ruto's reign book cover copy.jpg" alt="Book Cover Example">
+                            <div class="overlay">
+                                <h4>Book Cover</h4>
+                                <p>Storytelling visuals</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="../../BIZ STUDIO/mangere banner copy.jpg" alt="Social Media Post Example">
+                            <div class="overlay">
+                                <h4>Social Media Campaign</h4>
+                                <p>Engaging Graphics</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="assets/canax online posters.jpg" alt="Web Banner Example">
+                            <div class="overlay">
+                                <h4>Web Banner</h4>
+                                <p>Promotional Design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="portfolio-content-videography" class="portfolio-content" data-aos="fade-up">
+                    <h3>Videography Projects</h3>
+                    <p>From corporate explainers to captivating documentaries, experience our cinematic storytelling.</p>
+                    <div class="video-grid">
+                        <!-- Example Videography Projects (Embed YouTube/Vimeo iframes, or local videos) -->
+                        <div class="video-item">
+                            <iframe src="assets/8c7e774f11104c2b86d0648ab6722ee6.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <h4>Corporate Explainer Video</h4>
+                            <p>For Tech Startup XYZ</p>
+                        </div>
+                        <div class="video-item">
+                            <iframe src="../../../Videos/CHRISTMASS WISHESH.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <h4>Event Highlight Reel</h4>
+                            <p>Annual Conference 2024</p>
+                        </div>
+                        <div class="video-item">
+                            <iframe src="../../caphy/UBUNIFU WETU.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <h4>Animation</h4>
+                            <p>Movie Trailer</p>
+                        </div>
+                        <div class="video-item">
+                            <iframe src="../../../Videos/arua tv 1.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <h4>Trailer</h4>
+                            <p>Dynamic & Engaging</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="portfolio-content-audiography" class="portfolio-content" data-aos="fade-up">
+                    <h3>Audiography Projects</h3>
+                    <p>Listen to our professional voice-overs, radio ads, and sound branding samples.</p>
+                    <div class="audio-slider-container">
+                        <div class="audio-slider">
+                            <!-- Example Audio Tracks (Add more as needed) -->
+                            <div class="audio-item">
+                                <h4>Corporate Voiceover</h4>
+                                <audio controls>
+                                    <source src="../../caphy/adverts/ADVERT 2/AUDIO/May 24, 07.34 PM-enhanced-v2.wav" type="audio/mpeg">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p>Clear & Professional</p>
+                            </div>
+                            <div class="audio-item">
+                                <h4>Radio Commercial</h4>
+                                <audio controls>
+                                    <source src="../../../Music/arua boys/arua boys radio audio_mixdown.mp3 final.mp3" type="audio/mpeg">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p>Catchy & Engaging</p>
+                            </div>
+                            <div class="audio-item">
+                                <h4>Podcast Intro/Outro</h4>
+                                <audio controls>
+                                    <source src="../../../Videos/VID-20240923-WA0008.mp4" type="audio/mpeg">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p>Dynamic Sound Branding</p>
+                            </div>
+                            <div class="audio-item">
+                                <h4>Sound Design Sample</h4>
+                                <audio controls>
+                                    <source src="../../../Videos/carol-of-the-bells_59sec-263250.mp4" type="audio/mpeg">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p>Atmospheric & Immersive</p>
+                            </div>
+                             <div class="audio-item">
+                                <h4>Jingle for Brand X</h4>
+                                <audio controls>
+                                    <source src="../../../Videos/canax official advert .mp4" type="audio/mpeg">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <p>Memorable & Upbeat</p>
+                            </div>
+                        </div>
+                        <!-- Optional: Navigation arrows for manual scroll -->
+                        <button class="audio-scroll-btn left" onclick="scrollAudio(-1)"><i class="fas fa-chevron-left"></i></button>
+                        <button class="audio-scroll-btn right" onclick="scrollAudio(1)"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating WhatsApp Button (Global) -->
+    <a href="https://wa.me/254751141395" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scroll-to-Top Button (Global) -->
+    <button class="scroll-to-top-btn" id="scrollToTopBtn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col logo-col">
+                <h3>CANAX DESIGNS</h3>
+                <p>Your vision, our canvas. We transform ideas into stunning visual and audio-visual realities.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61553377659797 " aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com/@canax_designs?is_from_webapp=1&sender_device=pc " aria-label="Tiktok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/canaxdesigners?igsh=OGQ5ZDc2ODk2ZA==  " aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="www.linkedin.com/in/canax-design-622975308 " aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+					<a href="https://t.me/canaxdesign " aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+					<a href="https://youtube.com/@canaxdesigns?si=JSAKzTyvVNKHrJJH " aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact-col">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+                <p><i class="fas fa-phone"></i> +254 751 141 395</p>
+                <p><i class="fas fa-envelope"></i> canaxdesigns@gmail.com</p>
+                <p><i class="fas fa-clock"></i> Sun - Fri: 5 AM - 10 PM</p>
+            </div>
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>Stay updated with our latest offers and creative insights.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email" aria-label="Your Email">
+                    <button type="submit" class="btn btn-secondary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> CANAX DESIGNS. All rights reserved.</p>
+            <div class="footer-legal-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Removed AOS JS link as AOS is disabled for now -->
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <script>
+        // AOS.init is commented out in main.js, so this block is not strictly needed here
+        // but keeping it for completeness if you decide to re-enable AOS later.
+        /*
+        AOS.init({
+            duration: 1000,
+            once: true,
+            mirror: false
+        });
+        */
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+    <!-- JavaScript for Menu Toggle, Sticky Header, Scroll-to-Top (from main.js) -->
+    <script src="js/main.js"></script>
+    <!-- AOS Library JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // AOS initialization for this page
+        AOS.init({
+            duration: 800,
+            once: true, // Only animate once on internal pages for cleaner feel
+        });
+
+        // Set current year in footer (if not already handled by main.js)
+        const currentYearSpan = document.getElementById('currentYear');
+        if (currentYearSpan) {
+            currentYearSpan.textContent = new Date().getFullYear();
+        }
+
+        // Portfolio Category Switching Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabs = document.querySelectorAll('.category-tab');
+            const contents = document.querySelectorAll('.portfolio-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    // Remove active from all tabs and contents
+                    tabs.forEach(t => t.classList.remove('active'));
+                    contents.forEach(c => c.classList.remove('active'));
+
+                    // Add active to clicked tab
+                    tab.classList.add('active');
+
+                    // Show corresponding content
+                    const category = tab.dataset.category;
+                    document.getElementById(`portfolio-content-${category}`).classList.add('active');
+
+                    // Re-initialize AOS to animate newly visible content
+                    AOS.refresh();
+                });
+            });
+        });
+
+        // Audiography Scroll Wheel/Slider Logic
+        function scrollAudio(direction) {
+            const slider = document.querySelector('.audio-slider');
+            // Calculate scroll amount based on item width + margin
+            const firstAudioItem = slider.querySelector('.audio-item');
+            // Check if firstAudioItem exists to prevent errors if slider is empty
+            const scrollAmount = firstAudioItem ? firstAudioItem.offsetWidth + (parseInt(getComputedStyle(firstAudioItem).marginRight) || 0) * 2 : 350; // Fallback to 350px
+
+            if (direction === 1) {
+                slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            } else {
+                slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+</html>

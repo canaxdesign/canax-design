@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - CANAX DESIGNS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* FAQ Page Specific Styles (can be moved to style.css) */
+        .faq-hero-section {
+            background-color: var(--primary-color-dark); /* Darker green background */
+            color: var(--text-light);
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .faq-hero-section h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: var(--accent-color); /* Bright green for headline */
+        }
+
+        .faq-hero-section p {
+            font-size: 1.2em;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .faq-main-content {
+            padding: 50px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background-color: var(--background-light);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 25px;
+        }
+
+        .faq-item h3 {
+            font-size: 1.5em;
+            color: var(--primary-color-dark);
+            margin-bottom: 10px;
+        }
+
+        .faq-item p {
+            line-height: 1.6;
+            color: var(--accent-green);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .faq-main-content {
+                padding: 30px 15px;
+            }
+
+            .faq-hero-section h1 {
+                font-size: 2.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/2547515141395" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scroll-to-Top Button -->
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html">CANAX DESIGNS</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html" class="active">FAQ</a></li> <!-- Added FAQ link and active class -->
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- FAQ Hero Section -->
+    <section class="faq-hero-section">
+        <h1>Frequently Asked Questions</h1>
+        <p>Find quick answers to common questions about our services, processes, and pricing.</p>
+    </section>
+
+    <!-- FAQ Main Content Section -->
+    <section class="faq-main-content">
+        <div class="faq-list">
+            <div class="faq-item">
+                <h3>What is your typical project timeline?</h3>
+                <p>Project timelines vary based on complexity and scope. Basic graphic designs can be completed within 24-48 hours, while comprehensive branding or video production projects may take several weeks. We provide a detailed timeline with every quote.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Do you offer custom packages?</h3>
+                <p>Absolutely! While we have standard packages, we specialize in tailoring solutions to meet your unique needs and budget. Contact us for a personalized consultation and quote.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What payment methods do you accept?</h3>
+                <p>We accept various payment methods, including M-Pesa, bank transfers, and major credit/debit cards. Payment terms are discussed and agreed upon before project commencement, with clear milestones for larger projects.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I get started with a project?</h3>
+                <p>It's simple! Reach out to us via our contact form, email, or WhatsApp. We'll schedule a consultation to discuss your vision, requirements, and provide a comprehensive proposal and quote tailored to your needs.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can I see examples of your previous work?</h3>
+                <p>Yes, certainly! Please visit our <a href="portfolio.html" style="color: var(--accent-color); text-decoration: underline;">Portfolio page</a> to see a diverse range of our completed projects across various industries. We're proud of our work!</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What is your revision policy?</h3>
+                <p>Our packages typically include a set number of revisions to ensure you are completely satisfied with the final product. Additional revisions beyond the package limit may incur extra charges, which will be communicated transparently.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Do you offer ongoing support or maintenance?</h3>
+                <p>For certain services, like full website creation, we offer ongoing support and maintenance packages. This ensures your digital assets remain up-to-date, secure, and performing optimally. Details can be discussed during your consultation.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do you handle client communication during a project?</h3>
+                <p>We believe in clear and consistent communication. We use a combination of email, phone calls, and dedicated project management tools to keep you updated on progress, gather feedback, and address any questions promptly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Call to Action Section (reusing existing CTA) -->
+    <section class="final-cta-section">
+        <div class="container">
+            <h2>Still Have Questions?</h2>
+            <p>We're here to help! Reach out to our team for personalized assistance.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary whatsapp-chat-btn">
+                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+                <a href="contact.html" class="btn btn-outline">Contact Us Directly</a>
+            </div>
+        </div>
+    </section>
+
+   <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col logo-col">
+                <h3>CANAX DESIGNS</h3>
+                <p>Your vision, our canvas. We transform ideas into stunning visual and audio-visual realities.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61553377659797 " aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com/@canax_designs?is_from_webapp=1&sender_device=pc " aria-label="Tiktok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/canaxdesigners?igsh=OGQ5ZDc2ODk2ZA==  " aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="www.linkedin.com/in/canax-design-622975308 " aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+					<a href="https://t.me/canaxdesign " aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+					<a href="https://youtube.com/@canaxdesigns?si=JSAKzTyvVNKHrJJH " aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact-col">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+                <p><i class="fas fa-phone"></i> +254 751 141 395</p>
+                <p><i class="fas fa-envelope"></i> canaxdesigns@gmail.com</p>
+                <p><i class="fas fa-clock"></i> Sun - Fri: 5 AM - 10 PM</p>
+            </div>
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>Stay updated with our latest offers and creative insights.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email" aria-label="Your Email">
+                    <button type="submit" class="btn btn-secondary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> CANAX DESIGNS. All rights reserved.</p>
+            <div class="footer-legal-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Removed AOS JS link as AOS is disabled for now -->
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <script>
+        // AOS.init is commented out in main.js, so this block is not strictly needed here
+        // but keeping it for completeness if you decide to re-enable AOS later.
+        /*
+        AOS.init({
+            duration: 1000,
+            once: true,
+            mirror: false
+        });
+        */
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - CANAX DESIGNS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/2547515141395" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scroll-to-Top Button -->
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html">CANAX DESIGNS</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section for Services Page -->
+    <section class="hero-section hero-small">
+        <div class="video-background">
+            <video autoplay muted loop class="hero-video">
+                <source src="videos/hero_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-headline" data-aos="fade-up" data-aos-delay="100">Our Creative Services</h1>
+            <p class="hero-subtext" data-aos="fade-up" data-aos-delay="200">Bringing Your Vision to Life with Exceptional Design & Production.</p>
+        </div>
+    </section>
+
+    <!-- Services Section (Main Content Area) -->
+    <section class="packages-page-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Explore Our Offerings</h2>
+            <p class="section-subtext" data-aos="fade-up" data-aos-delay="100">From stunning visuals to immersive audio-visual experiences, we've got you covered.</p>
+
+            <!-- Service Category Tabs -->
+            <div class="package-category-tabs" id="service-category-tabs" data-aos="fade-up" data-aos-delay="200">
+                <!-- Tabs will be dynamically loaded here by JavaScript -->
+            </div>
+
+            <!-- Service Category Content Display -->
+            <div id="service-content-display">
+                <!-- Service cards will be dynamically loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Cart Summary -->
+    <div class="cart-summary" id="cart-summary">
+        <h3><i class="fas fa-shopping-cart"></i> Your Order</h3>
+        <ul id="cart-items">
+            <!-- Cart items will be dynamically loaded here -->
+        </ul>
+        <p class="empty-cart-message" style="display: none;">Your cart is empty.</p>
+        <p class="cart-total">Total: <span id="cart-total-amount">KES 0</span></p>
+        <button class="btn btn-primary" id="place-order-btn">Place Order</button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col logo-col">
+                <h3>CANAX DESIGNS</h3>
+                <p>Your vision, our canvas. We transform ideas into stunning visual and audio-visual realities.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61553377659797 " aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com/@canax_designs?is_from_webapp=1&sender_device=pc " aria-label="Tiktok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/canaxdesigners?igsh=OGQ5ZDc2ODk2ZA==  " aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="www.linkedin.com/in/canax-design-622975308 " aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+					<a href="https://t.me/canaxdesign " aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+					<a href="https://youtube.com/@canaxdesigns?si=JSAKzTyvVNKHrJJH " aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact-col">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+                <p><i class="fas fa-phone"></i> +254 751 141 395</p>
+                <p><i class="fas fa-envelope"></i> canaxdesigns@gmail.com</p>
+                <p><i class="fas fa-clock"></i> Sun - Fri: 5 AM - 10 PM</p>
+            </div>
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>Stay updated with our latest offers and creative insights.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email" aria-label="Your Email">
+                    <button type="submit" class="btn btn-secondary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> CANAX DESIGNS. All rights reserved.</p>
+            <div class="footer-legal-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Removed AOS JS link as AOS is disabled for now -->
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+   
+</body>
+</html>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            mirror: false
+        });
+    </script>
+    <script src="js/main.js"></script> <!-- Your existing main JS for header, scroll-to-top etc. -->
+    <script src="js/services.js"></script> <!-- New JS for services page logic -->
+</body>
+</html>

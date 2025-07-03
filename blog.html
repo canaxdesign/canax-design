@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - CANAX DESIGNS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Basic Blog Page Specific Styles (can be moved to style.css) */
+        .blog-hero-section {
+            background-color: var(--primary-color-dark); /* Darker green background */
+            color: var(--text-light);
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .blog-hero-section h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: var(--accent-color); /* Bright green for headline */
+        }
+
+        .blog-hero-section p {
+            font-size: 1.2em;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .blog-main-content {
+            display: flex;
+            flex-wrap: wrap; /* Allows wrapping on smaller screens */
+            gap: 30px;
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .blog-posts-container {
+            flex: 3; /* Takes 3 parts of the available space */
+            min-width: 300px; /* Minimum width before wrapping */
+        }
+
+        .blog-sidebar {
+            flex: 1; /* Takes 1 part of the available space */
+            min-width: 250px; /* Minimum width before wrapping */
+            background-color: var(--background-light); /* Lighter background for sidebar */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            align-self: flex-start; /* Aligns to the top */
+        }
+
+        .blog-post-card {
+            background-color: var(--background-light);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .blog-post-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .blog-post-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .blog-post-content {
+            padding: 25px;
+        }
+
+        .blog-post-content h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: var(--primary-color-dark);
+        }
+
+        .blog-post-meta {
+            font-size: 0.9em;
+            color: var(--text-muted);
+            margin-bottom: 15px;
+        }
+
+        .blog-post-meta span {
+            margin-right: 15px;
+        }
+
+        .blog-post-meta i {
+            margin-right: 5px;
+            color: var(--accent-color);
+        }
+
+        .blog-post-content p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .blog-post-content .btn-link {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .blog-sidebar h4 {
+            font-size: 1.5em;
+            color: var(--text-light); /* Changed to light text for visibility */
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+        }
+
+        .blog-sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .blog-sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .blog-sidebar ul li a {
+            color: var(--text-light); /* Changed to light text for visibility */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .blog-sidebar ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .blog-main-content {
+                flex-direction: column;
+                padding: 30px 15px;
+            }
+
+            .blog-posts-container,
+            .blog-sidebar {
+                flex: none; /* Remove flex sizing */
+                width: 100%; /* Take full width */
+            }
+
+            .blog-sidebar {
+                margin-top: 30px;
+            }
+
+            .blog-hero-section h1 {
+                font-size: 2.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/YOUR_PHONE_NUMBER" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scroll-to-Top Button -->
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html">CANAX DESIGNS</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li> <!-- Added Blog link and active class -->
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Blog Hero Section -->
+    <section class="blog-hero-section">
+        <h1>Our Latest Insights</h1>
+        <p>Stay updated with creative trends, industry news, and tips from CANAX DESIGNS.</p>
+    </section>
+
+    <!-- Blog Main Content Section -->
+    <section class="blog-main-content">
+        <div class="blog-posts-container">
+            <!-- Blog Post 1 -->
+            <article class="blog-post-card">
+                <img src="../../BIZ STUDIO/canax videography.jpg" alt="The Power of Visual Storytelling">
+                <div class="blog-post-content">
+                    <h3>The Power of Visual Storytelling in Branding</h3>
+                    <div class="blog-post-meta">
+                        <span><i class="fas fa-calendar-alt"></i> July 3, 2025</span>
+                        <span><i class="fas fa-user"></i> CANAX Team</span>
+                        <span><i class="fas fa-tag"></i> Branding, Graphics</span>
+                    </div>
+                    <p>In today's fast-paced digital world, capturing attention is harder than ever. Visual storytelling offers a unique way to connect with your audience on an emotional level...</p>
+                    <a href="#" class="btn-link">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- Blog Post 2 -->
+            <article class="blog-post-card">
+                <img src="../../caphy/KALGACAL MEDIA/IMG-20250622-WA0006.jpg" alt="Trends in Videography">
+                <div class="blog-post-content">
+                    <h3>Top 5 Videography Trends for 2025</h3>
+                    <div class="blog-post-meta">
+                        <span><i class="fas fa-calendar-alt"></i> June 28, 2025</span>
+                        <span><i class="fas fa-user"></i> CANAX Team</span>
+                        <span><i class="fas fa-tag"></i> Videography, Trends</span>
+                    </div>
+                    <p>From cinematic drones to interactive video experiences, 2025 is shaping up to be an exciting year for videography. Discover the trends that will define your visual content...</p>
+                    <a href="#" class="btn-link">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- Blog Post 3 -->
+            <article class="blog-post-card">
+                <img src="../../../Downloads/398ff343-00df-4084-9fab-f08f8c10791c.jpeg" alt="Audio Branding Importance">
+                <div class="blog-post-content">
+                    <h3>Why Audio Branding is Non-Negotiable for Modern Businesses</h3>
+                    <div class="blog-post-meta">
+                        <span><i class="fas fa-calendar-alt"></i> June 20, 2025</span>
+                        <span><i class="fas fa-user"></i> CANAX Team</span>
+                        <span><i class="fas fa-tag"></i> Audiography, Branding</span>
+                    </div>
+                    <p>In a visually saturated market, sound offers a powerful, often overlooked, avenue for brand recognition. Learn how strategic audio elements can enhance your brand identity...</p>
+                    <a href="#" class="btn-link">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+
+        <aside class="blog-sidebar">
+            <h4>Search Blog</h4>
+            <div class="search-bar">
+                <input type="text" placeholder="Search posts..." aria-label="Search blog posts">
+                <button type="button" class="btn btn-primary"><i class="fas fa-search"></i></button>
+            </div>
+
+            <h4 style="margin-top: 30px;">Categories</h4>
+            <ul>
+                <li><a href="#">Branding (5)</a></li>
+                <li><a href="#">Videography (7)</a></li>
+                <li><a href="#">Audiography (3)</a></li>
+                <li><a href="#">Web Design (4)</a></li>
+                <li><a href="#">Marketing (6)</a></li>
+            </ul>
+
+            <h4 style="margin-top: 30px;">Recent Posts</h4>
+            <ul>
+                <li><a href="#">The Future of AI in Creative Design</a></li>
+                <li><a href="#">Mastering Social Media Video Content</a></li>
+                <li><a href="#">Creating Engaging Podcast Intros</a></li>
+                <li><a href="#">Your Guide to Effective Logo Design</a></li>
+            </ul>
+        </aside>
+    </section>
+
+   <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col logo-col">
+                <h3>CANAX DESIGNS</h3>
+                <p>Your vision, our canvas. We transform ideas into stunning visual and audio-visual realities.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61553377659797 " aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com/@canax_designs?is_from_webapp=1&sender_device=pc " aria-label="Tiktok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/canaxdesigners?igsh=OGQ5ZDc2ODk2ZA==  " aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="www.linkedin.com/in/canax-design-622975308 " aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+					<a href="https://t.me/canaxdesign " aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+					<a href="https://youtube.com/@canaxdesigns?si=JSAKzTyvVNKHrJJH " aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact-col">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+                <p><i class="fas fa-phone"></i> +254 751 141 395</p>
+                <p><i class="fas fa-envelope"></i> canaxdesigns@gmail.com</p>
+                <p><i class="fas fa-clock"></i> Sun - Fri: 5 AM - 10 PM</p>
+            </div>
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>Stay updated with our latest offers and creative insights.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email" aria-label="Your Email">
+                    <button type="submit" class="btn btn-secondary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> CANAX DESIGNS. All rights reserved.</p>
+            <div class="footer-legal-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Removed AOS JS link as AOS is disabled for now -->
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <script>
+        // AOS.init is commented out in main.js, so this block is not strictly needed here
+        // but keeping it for completeness if you decide to re-enable AOS later.
+        /*
+        AOS.init({
+            duration: 1000,
+            once: true,
+            mirror: false
+        });
+        */
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

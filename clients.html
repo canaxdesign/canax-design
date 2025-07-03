@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clients - CANAX DESIGNS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Clients Page Specific Styles (can be moved to style.css) */
+        body {
+            padding-top: 90px; /* Add padding to body to prevent header overlap */
+        }
+
+        .clients-hero-section {
+            background-color: var(--primary-color-dark); /* Darker green background */
+            color: var(--text-light);
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .clients-hero-section h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: var(--accent-color); /* Bright green for headline */
+        }
+
+        .clients-hero-section p {
+            font-size: 1.2em;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .clients-main-content {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #ffffff; /* Light background for readability */
+            color: var(--text-dark); /* Dark text on light background */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 50px; /* Space from hero section */
+            margin-bottom: 50px; /* Space before footer */
+        }
+
+        .clients-main-content h2 {
+            font-size: 2em;
+            color: var(--primary-color-dark);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+        }
+
+        .clients-main-content h2:first-of-type {
+            margin-top: 0; /* No top margin for the very first h2 */
+        }
+
+        .client-logo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .client-logo-item {
+            padding: 20px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            text-align: center;
+            background-color: var(--background-light);
+        }
+
+        .client-logo-item img {
+            max-width: 100%;
+            height: auto;
+            max-height: 80px;
+            object-fit: contain;
+            filter: grayscale(100%); /* Make logos grayscale */
+            opacity: 0.7;
+            transition: filter 0.3s ease, opacity 0.3s ease;
+        }
+
+        .client-logo-item:hover img {
+            filter: grayscale(0%); /* Color on hover */
+            opacity: 1;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            body {
+                padding-top: 70px; /* Adjust padding for smaller screens if header height changes */
+            }
+            .clients-main-content {
+                padding: 30px 15px;
+            }
+
+            .clients-hero-section h1 {
+                font-size: 2.5em;
+            }
+            .client-logo-grid {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating WhatsApp Button -->
+    <a href="hhttps://wa.me/2547515141395" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scroll-to-Top Button -->
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html">CANAX DESIGNS</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="terms.html">Terms & Services</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="clients.html" class="active">Clients</a></li> <!-- Added Clients link and active class -->
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Clients Hero Section -->
+    <section class="clients-hero-section">
+        <h1>Our Valued Clients</h1>
+        <p>We are proud to partner with a diverse range of businesses and individuals.</p>
+    </section>
+
+    <!-- Clients Main Content Section -->
+    <section class="clients-main-content">
+        <h2>Who We Work With</h2>
+        <p>At CANAX DESIGNS, we believe in building strong, lasting relationships with our clients. We've had the privilege of working with organizations and individuals across various sectors, helping them achieve their creative and business objectives.</p>
+        <p>Our commitment to excellence and tailored solutions has earned us the trust of:</p>
+
+        <div class="client-logo-grid">
+            <div class="client-logo-item">
+                <img src="../../BIZ STUDIO/opako/upako logo copy without background.png" alt="Client A Logo">
+            </div>
+            <div class="client-logo-item">
+                <img src="../../BIZ STUDIO/logo canax caphy.png" alt="Client B Logo">
+            </div>
+            <div class="client-logo-item">
+                <img src="../../1682452862134logo.jpg" alt="Client C Logo">
+            </div>
+            <div class="client-logo-item">
+                <img src="../../../Downloads/pngwing.com (22).png" alt="Client D Logo">
+            </div>
+            <div class="client-logo-item">
+                <img src="../../BIZ STUDIO/ARUA BOYS FC LOGO LAST 2024 (1).png" alt="Client E Logo">
+            </div>
+            <div class="client-logo-item">
+                <img src="../../jk collection copy.gif" alt="Client F Logo">
+            </div>
+            <div class="client-logo-item">
+                <img src="../../1700079282314.jpg" alt="Client G Logo">
+            </div>
+            <div class="client-logo-item">
+                <img src="../../heralds.jpg" alt="Client H Logo">
+            </div>
+             <div class="client-logo-item">
+                <img src="../../1704108961335.jpg" alt="Client I Logo">
+            </div>
+            <!--<div class="client-logo-item">
+                <img src="https://placehold.co/150x80/000F01/F9FFFC?text=Client+J" alt="Client J Logo">
+            </div>
+            <div class="client-logo-item">
+                <img src="https://placehold.co/150x80/000F01/F9FFFC?text=Client+K" alt="Client K Logo">
+            </div>
+            <div class="client-logo-item">
+                <img src="https://placehold.co/150x80/000F01/F9FFFC?text=Client+L" alt="Client L Logo">
+            </div>-->
+        </div>
+
+        <h2 style="margin-top: 50px;">Client Testimonials</h2>
+        <p>Don't just take our word for it. Hear what our clients have to say about their experience working with CANAX DESIGNS:</p>
+        <!-- Reusing testimonial card structure from index.html for consistency -->
+        <div class="testimonial-slider-container">
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="quote">"CANAX DESIGNS truly understood our brand vision and brought it to life with stunning visuals. Their professionalism is unmatched!"</p>
+                    <p class="author">– CEO, Tech Solutions Inc.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="quote">"The video campaign they produced for our product launch exceeded all expectations. We saw a significant boost in engagement."</p>
+                    <p class="author">– Marketing Director, Global Retail Co.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="quote">"Their audiography work for our podcast intro was exactly what we needed – crisp, professional, and memorable."</p>
+                    <p class="author">– Podcast Host, Creative Minds Studio</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Call to Action Section (reusing existing CTA) -->
+    <section class="final-cta-section">
+        <div class="container">
+            <h2>Ready to Become Our Next Success Story?</h2>
+            <p>Join our growing list of satisfied clients. Let's create something remarkable together.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary whatsapp-chat-btn">
+                    <i class="fab fa-whatsapp"></i> Get a Free Quote
+                </a>
+                <a href="portfolio.html" class="btn btn-outline">View Our Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col logo-col">
+                <h3>CANAX DESIGNS</h3>
+                <p>Your vision, our canvas. We transform ideas into stunning visual and audio-visual realities.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61553377659797 " aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com/@canax_designs?is_from_webapp=1&sender_device=pc " aria-label="Tiktok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/canaxdesigners?igsh=OGQ5ZDc2ODk2ZA==  " aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="www.linkedin.com/in/canax-design-622975308 " aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+					<a href="https://t.me/canaxdesign " aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+					<a href="https://youtube.com/@canaxdesigns?si=JSAKzTyvVNKHrJJH " aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact-col">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+                <p><i class="fas fa-phone"></i> +254 751 141 395</p>
+                <p><i class="fas fa-envelope"></i> canaxdesigns@gmail.com</p>
+                <p><i class="fas fa-clock"></i> Sun - Fri: 5 AM - 10 PM</p>
+            </div>
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>Stay updated with our latest offers and creative insights.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email" aria-label="Your Email">
+                    <button type="submit" class="btn btn-secondary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> CANAX DESIGNS. All rights reserved.</p>
+            <div class="footer-legal-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Removed AOS JS link as AOS is disabled for now -->
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <script>
+        // AOS.init is commented out in main.js, so this block is not strictly needed here
+        // but keeping it for completeness if you decide to re-enable AOS later.
+        /*
+        AOS.init({
+            duration: 1000,
+            once: true,
+            mirror: false
+        });
+        */
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
